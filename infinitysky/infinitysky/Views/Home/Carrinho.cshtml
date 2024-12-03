@@ -1,0 +1,179 @@
+﻿@model IEnumerable<infinitysky.Models.CarrinhoViewModel>
+
+@{
+    ViewData["Title"] = "Carrinho";
+    decimal total = 0;
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="~/css/carinho.css" asp-append-version="true">
+
+<!-- Banner com as 3 fotos -->
+<section class="banner">
+    <img class="banner-image" src="/img/fundocarrinho.png" alt="banner-image" />
+</section>
+
+<!-- Descrição que aparece -->
+<section class="descricao text-center">
+    <h2>Carrinho</h2>
+</section>
+
+<div class="container mt-4">
+    <section id="order">
+        <div class="card p-3">
+            @if (!Model.Any())
+            {
+                <div class="empty-cart text-center">
+                    <img src="/img/carrinhovazio.png" alt="Carrinho vazio" />
+                    <p>Ops!..<br /> Seu carrinho está vazio.</p>
+                </div>
+            }
+            else
+            {
+                <table class="table table-hover shopping-cart-wrap">
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            var subTotal = item.ItensCarrinho * item.Valor; //  ItensCarrinho (quantidade)  vezes o valor unico (valor de 1 plano)
+                            total += subTotal;
+                            <tr>
+                                <td class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <figure class="media">
+                                            <div class="image-container">
+                                                <img src="@item.image_plano" class="product-image" alt="Imagem do Plano" />
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <figcaption class="media-body text-end">
+                                        <div class="pt-3">
+                                            <h5 class="titulo-plano">@item.Nome</h5>
+                                            <p class="product-info">Hospedagem: @item.HospedagemPlano</p>
+                                            <p class="product-info">Curso: @item.CursoPlano</p>
+                                            <p class="product-info">Escola: @item.InstituicaoPlano</p>
+                                            <p class="product-info">Período: @item.PeriodoPlano</p>
+                                            <p class="product-parcela">@item.ParcelaPlano</p>
+                                        </div>
+                                    </figcaption>
+                                </td>
+                                <td>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button type="button" class="btn btn-default btn-acao-primario decrease-btn" onclick="updateQuantity(@item.IdPlano, 'decrease')" @if (item.ItensCarrinho <= 1)
+                                            {
+                                                <text>disabled</text>
+                                            }>-</button>
+                                        </div>
+                                        <input type="text" class="form-control text-center" id="quantity-@item.IdPlano" value="@item.ItensCarrinho" readonly>
+                                        <div class="input-group-append">
+                                            <button type="button" class="btn btn-default btn-acao-primario" onclick="updateQuantity(@item.IdPlano, 'increase')">+</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-end">
+                                    <input type="image" src="~/img/lixeira.png" alt="Remover" class="btn btn-outline-danger" style="width: 70px; height: 60px;" onclick="confirmRemove(@item.IdCarrinho)" />
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                    <div class="total-value d-flex justify-content-between align-items-center mt-4">
+        <h2>Valor Total: @total.ToString("C")</h2>
+        <div class="checkout-button" style="display: @(!Model.Any() ? "none" : "block")">
+            <form method="post" asp-action="Comprar" asp-controller="Home">
+                            @foreach (var item in Model)
+                            {
+                        <input type="hidden" name="idPlanos" value="@item.IdPlano" />
+                            }
+                <button type="submit" class="btn btn-success">COMPRAR</button>
+            </form>
+        </div>
+    </div>
+
+            }
+        </div>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+
+       // Primeira Parte  -> definir os nomes no html -> se nao tiver nao vai
+      // Acresenta ou diminui  a quantidade com base na ação
+
+
+    function updateQuantity(idPlano, action) {
+        var quantityInput = $("#quantity-" + idPlano);
+        var currentQuantity = parseInt(quantityInput.val());
+
+        if (action === "increase") {
+            currentQuantity++;
+        } else if (action === "decrease" && currentQuantity > 1) {
+            currentQuantity--;
+        }
+
+        // Atualiza o campo de quantidade de acordo com a ação tbm
+        quantityInput.val(currentQuantity);
+
+        // Envia uma requisição AJAX para atualizar a quantidade no backend
+        $.ajax({
+            url: action === "increase" ? '@Url.Action("AdicionarItem", "Home")' : '@Url.Action("RemoverItem", "Home")',
+            type: 'POST',
+            data: { Id: idPlano },
+            success: function (response) {
+                if (response.success) {
+                    // Exibindo a mensagem de sucesso
+                    Swal.fire({
+                        title: 'Quantidade Atualizada',
+                        text: 'Quantidade atualizada com sucesso!',
+                        icon: 'success',
+                        timer: 2500, // tempinho
+                        showConfirmButton: false
+                    });
+                } else {
+                    Swal.fire('Erro', 'Não foi possíve atualizar o item. Tente novamente.', 'error');
+                }
+            }
+        });
+    }
+
+    // no caso de deletar por completo
+    // mensagem de confirmação pois será uma ação sem volta
+    function confirmRemove(idCarrinho) {
+        Swal.fire({
+            title: 'Você tem certeza?',
+            text: 'Deseja remover este item do carrinho?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Sim, remover!',
+            cancelButtonText: 'Não, cancelar'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: '@Url.Action("DeletarCarrinho", "Home")',
+                    type: 'POST',
+                    data: { idCarrinho: idCarrinho },
+                    success: function (response) {
+                        if (response.success) {
+                            location.reload();
+                        } else {
+                            Swal.fire('Erro', 'Não foi possível remover o item. Tente novamente.', 'error');
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    // Tentando desativar
+    // pq quando for 1 e clicar no diminir nao vai ent precisa ficar desativado, se for maior que 1 ai atiV
+    // Configuração inicial para desativar botões de diminuir quando a quantidade for 1
+    $(document).ready(function () {
+        $("input[id^='quantity-']").each(function () {
+            var idPlano = $(this).attr('id').split('-')[1]; // ID do plano
+            toggleDecreaseButton(idPlano, parseInt($(this).val())); // chamando a função
+        });
+    });
+</script>

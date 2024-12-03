@@ -1,0 +1,235 @@
+﻿/*Fontes para adicionar no layout*/
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLight';
+    src: url('Gilroy-UltraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src: url('Gilroy-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Back';
+    src: url('Gilroy-Black.ttf');
+}
+
+.dashboard-container {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 350px;
+}
+
+    .dashboard-container h1 {
+        font-size: 46px;
+        color: #003b6b;
+        font-family: 'Gilroy-SemiBold';
+        margin-bottom: 20px;
+    }
+
+    .dashboard-container p {
+        font-size: 25px;
+        color: #003b6b;
+        font-family: 'Gilroy-SemiBold';
+        margin-bottom: 30px;
+    }
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+    .header-container h1 {
+        margin-bottom: 40px;
+    }
+
+    .header-container p {
+        margin-bottom: 40px;
+    }
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    width: 950px;
+    height: 410px;
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    box-shadow: 10px 10px 10px 10px darkgray;
+}
+
+.carrinho {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.compras {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.favoritos {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.sair {
+    font-size: 24px;
+    margin-right: 46px;
+}
+
+.profile-card {
+    text-align: center;
+    margin-right: 20px;
+    width: 900px;
+    width: 600px;
+}
+
+.profile-icon img {
+    width: 220px;
+    height: 230px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card p {
+    font-family: 'Gilroy-Medium';
+    margin: 0;
+    color: #003b6b;
+}
+
+.profile-button {
+    background-color: #3f84af;
+    color: white;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 0px;
+    cursor: pointer;
+    font-family: 'Gilroy-SemiBold';
+    width: 180px;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    justify-content: center;
+}
+
+.option-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy-SemiBold';
+    background-color: #3f84af;
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    width: 250px;
+    height: 90px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o efeito */
+}
+
+    .option-button:hover {
+        text-decoration: none; /* Garante que o sublinhado não apareça ao passar o mouse */
+        color: white; /* Mantém a cor do texto branca ao passar o mouse */
+        transform: translateY(-5px) scale(1.1); /* Faz o botão "pular" e aumentar de tamanho */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para destacar */
+    }
+
+    .option-button span {
+        text-decoration: none; /* Remove o sublinhado do texto específico */
+    }
+
+    .option-button .iconcarrinho {
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+
+    .option-button .iconcompras {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .option-button .iconfavoritos {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .option-button .iconsair {
+        width: 38px;
+        height: 40px;
+        margin-right: 45px;
+    }
+
+h1 {
+    text-align: center;
+    color: #003C5C;
+    font-family: Gilroy-SemiBold;
+    font-size: 55px;
+    margin: 50px 0; /* Adiciona espaçamento entre o título e o formulário */
+}
+
+.botao-admin {
+    background-color: #3A85B2;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    height: 50px;
+    margin-left: 15px;
+}
+
+.secondary-navbar {
+    background-color: #003C5C;
+    text-align: center; /* Centraliza os links */
+    font-family: 'Gilroy-SemiBold';
+    margin-top: -16px;
+    height: 80px;
+}
+
+.header-container p {
+    margin-bottom: -10px;
+}

@@ -1,0 +1,80 @@
+﻿@model IEnumerable<infinitysky.Models.CompraViewModel>
+
+@{
+    ViewData["Title"] = "Compras";
+}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<link rel="stylesheet" href="~/css/compras.css" asp-append-version="true">
+
+<!-- Banner com as 3 fotos -->
+<section class="banner">
+    <img class="banner-image" src="/img/fundoregistro.png" alt="banner-image" />
+</section>
+
+<!-- Descrição que aparece -->
+<section class="descricao text-center">
+    <h2>Compras</h2>
+</section>
+
+<div class="container mt-4">
+    <section id="order">
+        <div class="card p-3">
+            @if (!Model.Any())
+            {
+                <div class="empty-cart text-center">
+                    <img src="/img/carrinhovazio.png" alt="Nenhuma compra" />
+                    <p>Ops!..<br /> Você ainda não realizou nenhuma compra.</p>
+                </div>
+            }
+            else
+            {
+                <table class="table table-hover shopping-cart-wrap">
+                    <tbody>
+                        @foreach (var compra in Model)
+                        {
+                            <tr>
+                                <td class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <figure class="media">
+                                            <div class="image-container">
+                                                <img src="@compra.image_plano" class="product-image" alt="Imagem do Plano" />
+                                            </div>
+                                        </figure>
+                                    </div>
+                                    <figcaption class="media-body text-end">
+                                        <div class="pt-3">
+                                            <h5 class="titulo-plano">@compra.NomePlano</h5>
+                                            <p class="product-info">Descrição: @compra.DescricaoPlano</p>
+                                            <p class="product-info">Valor: @compra.ValorPlano.ToString("C")</p>
+                                            <p class="product-info">Status: @compra.StatusPagamento</p>
+                                            <p class="product-info">Forma de pagamento: @compra.FormaPagamento</p>
+                                            <p class="product-info">Horário do Pagamento: @DateTime.Now.ToString("HH:mm")</p>
+
+                                            <!-- Botão condicional -->
+                                           
+                                        </div>
+                                        @if (compra.StatusPagamento == "Pendente")
+                                        {
+                                            <a asp-controller="Home" asp-action="FormaCartao" class="btn btn-danger mt-2">
+                                                PENDENTE
+                                            </a>
+                                        }
+                                        else if (compra.StatusPagamento == "Finalizado")
+                                        {
+                                            <button class="btn btn-success mt-2" disabled>
+                                                COMPRA FINALIZADA
+                                            </button>
+                                        }
+                                    </figcaption>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+        </div>
+    </section>
+    
+</div>

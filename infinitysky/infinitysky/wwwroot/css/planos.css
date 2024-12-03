@@ -1,0 +1,385 @@
+﻿/*Fontes para adicionar no layout*/
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLight';
+    src: url('Gilroy-UltraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src: url('Gilroy-Thin.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Back';
+    src: url('Gilroy-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-image {
+    width: 1642px;
+    height: 550px;
+    margin-left: -13.5%;
+    margin-top: -50px; /*medida exata*/
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .banner-text h1 {
+        font-size: 3rem;
+    }
+
+    .banner-text p {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+.descricao {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    width: 1400px;
+    margin-left: -45px;
+    font-size: 25px;
+    color: #003C5C;
+    font-family: Gilroy-Medium;
+    border-color: darkgray;
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+
+
+/* Container para cada seção de país */
+.country-section1 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section2 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section3 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+
+/* Container para cada seção de país */
+.country-section4 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section5 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section6 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section7 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+/* Container para cada seção de país */
+.country-section8 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section9 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section10 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section11 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section12 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Container para cada seção de país */
+.country-section13 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+
+/* Estilo para o título do país */
+.country-section1 h3 {
+    font-size: 30px;
+    color: #003C5C;
+    margin-top: 10px;
+}
+
+.country-header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha os itens (imagem e título) em coluna */
+    margin-bottom: 20px;
+}
+
+.country-flag {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px; /* Adiciona espaço entre a bandeira e o título */
+    margin-top: 25px;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o container de planos */
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espaçamento entre os planos */
+    margin-top: 10px;
+}
+/*--------------CARDS----------------*/
+.h3, h3 {
+    font-family: Gilroy-SemiBold;
+    font-size: 37px;
+    color: #003C5C;
+}
+/* Estilo geral para o container de produtos */
+#products-container {
+    /*padding: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribui o espaço igualmente entre os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+    /* flex: 1 0 300px;  Cada card ocupa 1 fração do espaço disponível, com largura mínima de 300px */
+    height: 690px; /*tamanho dos cards, para ficar igual*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/*para o conteúdo do card ficar à esquerda e não grudado*/
+.pt-3 {
+    padding: 1rem !important;
+}
+
+/* Estilo da imagem do plano */
+.product-image {
+    width: 100%;
+    height: 200px; /* Define uma altura fixa para as imagens */
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+}
+
+.card-body {
+    padding: 0px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.product-favoritar {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    margin-left: 280px;
+    margin-top: -200px;
+}
+
+
+.product-name { /*nome dos planos*/
+    font-family: 'Gilroy-SemiBold';
+    font-size: 1.60rem;
+    font-weight: 600;
+    color: #003C5F;
+    margin-bottom: 10px;
+    text-align: center; /* Alinhamento à esquerda */
+}
+
+
+.product-info { /*nome das informações*/
+    font-family: 'Gilroy-Medium';
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+
+.product-description {
+    font-family: 'Gilroy-Medium';
+    font-size: 0.94rem;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.product-price {
+    font-family: 'Gilroy-Bold';
+    color: #003C5F;
+    font-size: 1.55rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.product-parcel {
+    font-family: 'Gilroy-Bold';
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003C5F;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.product-period {
+    font-family: 'Gilroy-Medium';
+    font-size: 0.94rem;
+    color: #888;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.button {
+    background-color: #003C5F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    margin-left: 30px; /*para deixar centralizado*/
+}
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+
+.button__text {
+    font-family: 'Gilroy-SemiBold';
+    margin-right: 8px;
+}
+
+.button__icon svg {
+    fill: white;
+    width: 18px;
+    height: 18px;
+}
+
+.no-products {
+    text-align: center;
+    padding: 50px 20px;
+    color: #555;
+}
+
+    .no-products h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .no-products p {
+        font-size: 1rem;
+        color: #888;
+    }
+
+.plans-container {
+    margin-left: 25px;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.button__icon svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+.search-icon {
+    width: 30px;
+    height: auto;
+    margin-top: 15px;
+}
+
+

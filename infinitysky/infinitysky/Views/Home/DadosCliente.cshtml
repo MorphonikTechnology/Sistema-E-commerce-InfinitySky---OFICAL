@@ -1,0 +1,57 @@
+﻿@model Cliente
+
+@{
+    ViewData["Title"] = "Dados Cliente";
+}
+<link rel="stylesheet" href="~/css/dadoscliente.css" asp-append-version="true">
+
+@if (TempData["Mensagem"] != null)
+
+
+
+{
+    <div class="alert alert-success">@TempData["Mensagem"]</div>
+}
+@if (!ViewData.ModelState.IsValid)
+
+
+
+{
+    <div class="alert alert-danger">Erro ao atualizar os dados. Por favor, verifique os campos.</div>
+}
+
+<div class="cliente-detalhes">
+    <div class="header">
+        <h1>Olá, @Model.Nome!</h1>
+        <p>Seu intercâmbio, do Céu ao Infinito.</p>
+    </div>
+    <br /> 
+    <div class="content">
+        <div class="sidebar">
+            <img class="image-user" src="/img/usuarioazul.png" alt="image-user" />
+            <p>@Model.Nome</p>
+            <a asp-controller="Home" asp-action="PainelCliente" class="btn-voltar">Voltar</a>
+        </div>
+
+        <div class="main-info">
+            <p><strong>Nome:</strong> @Model.Nome</p>
+            <p><strong>Telefone:</strong> @Model.Telefone</p>
+
+            @if (Model.DataNascimento.HasValue)
+            {
+                <p><strong>Data de nascimento:</strong> @Model.DataNascimento.Value.ToString("dd/MM/yyyy")</p>
+            }
+            else
+            {
+                <p><strong>Data de nascimento:</strong> Não informada</p>
+            }
+
+            <p><strong>E-mail:</strong> @Model.Email</p>
+            <p><strong>CPF:</strong> @Model.Cpf_Cliente</p>
+
+
+            <br />
+            <a asp-controller="Home" asp-action="AtualizarDados" class="btn-atualizar">Atualizar meus dados</a>
+        </div>
+    </div>
+</div>

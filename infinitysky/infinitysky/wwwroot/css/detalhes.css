@@ -1,0 +1,398 @@
+﻿/*Fontes para adicionar no layout*/
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('Gilroy-Light.ttf');
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-image {
+    width: 1638px;
+    height: 550px;
+    margin-left: -29%;
+    margin-top: -50px;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .banner-text h1 {
+        font-size: 3rem;
+    }
+
+    .banner-text p {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+/* Descrição */
+.descricao {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    width: 1400px;
+    margin-left: -18%;
+    font-size: 25px;
+    color: #003C5C;
+    font-family: Gilroy-Medium;
+    border-color: darkgray;
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+/* Layout Principal */
+.container-pais {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.pais-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    width: 1200px;
+    margin-left: -200px;
+}
+
+.flag-img {
+    width: 2500px; /* Aumentando a largura da bandeira */
+    height: auto;
+    margin-right: 50px;
+}
+
+.pais-info {
+    max-width: 700px; /* Aumentando a largura do container de texto */
+    text-align: left;
+}
+
+.pais-nome {
+    font-size: 50px; /* Aumentando o tamanho do nome do país */
+    margin: 10px 0;
+    color: #003C5F;
+    margin-left: 200px;
+}
+
+.pais-descricao {
+    font-size: 25px; /* Aumentando o tamanho do texto descritivo */
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+
+/* Programas de Intercâmbio */
+
+
+.programas-section h3 {
+    font-size: 48px;
+    margin: 10px 0;
+    color: white;
+}
+
+
+/* Programas de Intercâmbio */
+.programas-section {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #003C5F;
+    width: 1400px;
+    height: 700px;
+    margin-left: -290px;
+}
+
+.programas {
+    padding: 20px;
+    text-align: center;
+}
+
+    .programas h2 {
+        margin-bottom: 20px;
+        font-family: Gilroy-SemiBold;
+        font-size: 37px;
+        color: #003C5C;
+    }
+
+.cardsprog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+.cardinfo {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .cardinfo img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .cardinfo h3 {
+        margin: 15px 0;
+        font-family: Gilroy-Bold;
+        font-size: 25px;
+        color: #003C5C;
+    }
+
+    .cardinfo p {
+        padding: 0 15px 15px 15px;
+        font-size: 1rem;
+        color: #666;
+    }
+
+/*estudar espaçado*/
+.h4, h4 {
+    font-size: 1.5rem;
+    letter-spacing: 15px;
+    color: white;
+}
+
+
+/*--------------CARDS----------------*/
+/* Container para cada seção de país */
+.country-section1 {
+    box-shadow: 5px 5px 5px 5px darkgray;
+    margin-left: -85px;
+    width: 1297px;
+}
+
+.country-header {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    flex-direction: column; /* Alinha os itens (imagem e título) em coluna */
+    margin-bottom: 20px;
+}
+
+/*PARA ABAIXAR OS CARDS*/
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+    margin-top: 30px;
+}
+
+
+/* Estilo para o container de planos */
+.plans-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Espaçamento entre os planos */
+    margin-top: 10px;
+}
+
+/*--------------CARDS----------------*/
+.h3, h3 {
+    font-family: Gilroy-SemiBold;
+    font-size: 50px;
+    color: #003C5C;
+    margin-left: -75px;
+}
+/* Estilo geral para o container de produtos */
+#products-container {
+    /*padding: 20px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribui o espaço igualmente entre os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+    /* flex: 1 0 300px;  Cada card ocupa 1 fração do espaço disponível, com largura mínima de 300px */
+    height: 690px; /*tamanho dos cards, para ficar igual*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+/*para o conteúdo do card ficar à esquerda e não grudado*/
+.pt-3 {
+    padding: 1rem !important;
+}
+
+/* Estilo da imagem do plano */
+.product-image {
+    width: 100%;
+    height: 200px; /* Define uma altura fixa para as imagens */
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #eee;
+    margin: 0;
+}
+
+.card-body {
+    padding: 0px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.product-favoritar {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    margin-left: 280px;
+    margin-top: -200px;
+}
+
+
+.product-name { /*nome dos planos*/
+    font-family: 'Gilroy-SemiBold';
+    font-size: 1.60rem;
+    font-weight: 600;
+    color: #003C5F;
+    margin-bottom: 10px;
+    text-align: center; /* Alinhamento à esquerda */
+}
+
+
+.product-info { /*nome das informações*/
+    font-family: 'Gilroy-Medium';
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+
+.product-description {
+    font-family: 'Gilroy-Medium';
+    font-size: 0.94rem;
+    color: #666;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.product-price {
+    font-family: 'Gilroy-Bold';
+    color: #003C5F;
+    font-size: 1.55rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.product-parcel {
+    font-family: 'Gilroy-Bold';
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #003C5F;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.product-period {
+    font-family: 'Gilroy-Medium';
+    font-size: 0.94rem;
+    color: #888;
+    margin-bottom: 15px;
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.button {
+    background-color: #003C5F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    margin-left: 30px; /*para deixar centralizado*/
+}
+
+    .button:hover {
+        background-color: #0056b3;
+    }
+
+.button__text {
+    font-family: 'Gilroy-SemiBold';
+    margin-right: 8px;
+}
+
+.button__icon svg {
+    fill: white;
+    width: 18px;
+    height: 18px;
+}
+
+.no-products {
+    text-align: center;
+    padding: 50px 20px;
+    color: #555;
+}
+
+    .no-products h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .no-products p {
+        font-size: 1rem;
+        color: #888;
+    }
+
+.plans-container {
+    margin-left: 25px;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.button__icon svg {
+    fill: white;
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .product-name {
+        font-size: 1rem;
+    }
+
+    .product-price {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: 8px;
+    }
+}

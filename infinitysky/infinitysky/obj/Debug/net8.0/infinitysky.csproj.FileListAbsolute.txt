@@ -1,0 +1,165 @@
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\appsettings.json
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.staticwebassets.runtime.json
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.exe
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.deps.json
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.runtimeconfig.json
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.pdb
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.csproj.AssemblyReference.cache
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.AssemblyInfoInputs.cache
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.AssemblyInfo.cs
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.csproj.CoreCompileInputs.cache
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.RazorAssemblyInfo.cache
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.RazorAssemblyInfo.cs
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.infinitysky.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.build.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\bundle\infinitysky.styles.css
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\projectbundle\infinitysky.bundle.scp.css
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinity.64D1D302.Up2Date
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\refint\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.pdb
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.genruntimeconfig.cache
+C:\Users\Laura\Desktop\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\ref\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\appsettings.json
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.staticwebassets.runtime.json
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.exe
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.deps.json
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.runtimeconfig.json
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.pdb
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.csproj.AssemblyReference.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.AssemblyInfoInputs.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.AssemblyInfo.cs
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.csproj.CoreCompileInputs.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.RazorAssemblyInfo.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.RazorAssemblyInfo.cs
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.infinitysky.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.build.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\bundle\infinitysky.styles.css
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\projectbundle\infinitysky.bundle.scp.css
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinity.64D1D302.Up2Date
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\refint\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.pdb
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.genruntimeconfig.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 (3)\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\ref\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\appsettings.json
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.staticwebassets.runtime.json
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.exe
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.deps.json
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.runtimeconfig.json
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\infinitysky.pdb
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\K4os.Hash.xxHash.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySql.Data.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySql.EntityFrameworkCore.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\ZstdSharp.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\comerr64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\gssapi64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\k5sprt64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\krb5_64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win-x64\native\krbcc64.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.csproj.AssemblyReference.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.AssemblyInfoInputs.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.AssemblyInfo.cs
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.csproj.CoreCompileInputs.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.RazorAssemblyInfo.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.RazorAssemblyInfo.cs
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.infinitysky.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.build.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.infinitysky.props
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\bundle\infinitysky.styles.css
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\scopedcss\projectbundle\infinitysky.bundle.scp.css
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinity.64D1D302.Up2Date
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\refint\infinitysky.dll
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.pdb
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\infinitysky.genruntimeconfig.cache
+C:\Users\Laura\Desktop\InfinitySky16_10 FINALIZADO\InfinitySky16_10\infinitysky\infinitysky\obj\Debug\net8.0\ref\infinitysky.dll

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<infinitysky.Models.Planos>
+
+
+@{
+    ViewData["Title"] = "ListaAtualizar";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfinitySky</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="~/css/listaatualizar.css" asp-append-version="true">
+</head>
+<body>
+
+    <br>
+    <br>
+
+
+    <h2 class="titulo">LISTA DE PLANOS</h2>
+    <br>
+    <br>
+    <!--Para aparecer a Mensagem de sucesso-->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <br>
+    <br>
+
+    <!--Fazendo em tabela para facilitar
+        Puxando apenas algumas informações e passando para a proxima tela pelo id do plano
+        Imagem, Nome e Botão alterar
+    -->
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Alterar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var plano in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="@plano.image_plano" alt="Imagem do Plano" class="imagem-plano" />
+                    </td>
+                    <td class="nome-plano">@plano.Nome</td>
+                    <td class="acoes">
+                        <br>
+                        <!--Passando pelo ID, nome da view que vai receber e onde esta o metodo (HomeController) -->
+                        <!--O id do plano irá aparecer na barra do navegador -->
+                        <a href="@Url.Action("AtualizarPlano", "Home", new { id = plano.IdPlano })" class="botaoo_alt">ALTERAR</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+﻿@{
+
+    ViewData["Title"] = "Sobre";
+}
+
+<link rel="stylesheet" href="~/css/sobreempresa.css" asp-append-version="true">
+
+
+<body>
+
+    <section class="fundo">
+        <!--Mudar o fundo-->
+        <img src="/img/fundosobre.png" class="fundo-img" alt="Fundo" />
+    </section>
+
+    <section class="motivos">
+        <h2>MOTIVOS PARA <br> EMBARCAR NESSA <br> COM A INFINITYSKY</h2>
+        <ul>
+            <li>1º Viagens seguras</li>
+            <li>2º Destinos incríveis</li>
+            <li>3º Suporte Infinity</li>
+            <li>4º Experiências excepcionais</li>
+            <li>5º Novas oportunidades</li>
+        </ul>
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+
+    <!--dividindo em class pq as fontes seram diferentes-->
+    <div class="program1">
+        <div class="programas">PROGRAMAS DE INTERCÂMBIO</div>
+        <div class="para-estudar">PARA ESTUDAR</div>
+        <p>
+            Os programas de intercâmbio estudantil oferecem uma experiência única para estudantes de todas as idades,
+            promovendo o desenvolvimento acadêmico e pessoal, além de proporcionar a imersão em novas culturas.
+        </p>
+    </div>
+
+
+    <div class="program2">
+        <div class="programas2">PROGRAMAS DE INTERCÂMBIO</div>
+        <div class="para-estudar2">PARA TRABALHAR</div>
+        <p>
+            Os programas de intercâmbio de trabalho no exterior oferecem uma valiosa oportunidade de
+            desenvolvimento profissional e pessoal. Permitem adquirir experiência internacional, aprimorar idiomas
+            e compreender culturas de negócios diversas.
+        </p>
+    </div>
+
+
+    <section class="servicos">
+
+        <!--provavelmente vai ter que dividir-->
+        <h2>SERVIÇOS <br> INFINITY</h2>
+
+        <br><Br><br><Br><br><Br>
+        <div class="servico-items">
+            <a href="#"><div class="servico-item">SUPORTE AO ALUNO </a>
+        </div>
+        <a href="#"><div class="servico-item">PLANOS EXCLUSIVOS </a></div>
+        <a href="#"> <div class="servico-item">NOVAS EXPERIÊNCIAS </a></div>
+        </div>
+    </section>
+
+    <section class="Quem_somos">
+        <img src="/img/logosimbolo.png" class="loginho alt="Fundo" />
+
+        <h2>QUEM SOMOS?</h2>
+        <p>
+            A InfinitySky é uma agência especializada em viagens de intercâmbio, oferecendo serviços de qualidade para garantir
+            que cada viagem seja uma experiência única e inesquecível. Nossa equipe é formada por profissionais dedicados,
+            prontos para oferecer o melhor suporte e acompanhamento em cada etapa de sua jornada.
+        </p>
+    </section>
+
+    <br>
+    <br>
+    <!--FORMSSS-->
+    <!--Parte do formulário -->
+    <!-- Layout principal com duas colunas: uma para o formulário e outra para a imagem -->
+    <div class="container">
+        <div class="form-container">
+            <!-- Coluna do formulário -->
+            <div class="form-content">
+                <h1>ESTÁ COM DÚVIDAS?</h1>
+                <h2>FALE CONOSCO</h2>
+                <h3>Entre em contato e esclareça suas dúvidas</h3>
+
+
+                <form>
+                    <!-- Resumo de validação para exibir mensagens de erro -->
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <!-- Campo Nome e Telefone -->
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <input id="nome" class="form-control" type="text" name="nome" placeholder="Nome" required />
+                        </div>
+                        <div class="form-group">
+                            <input id="phone" class="form-control" type="tel" name="phone" inputmode="numeric" placeholder="Telefone" maxlength="12" required />
+                        </div>
+                    </div>
+
+                    <!-- Campo Email -->
+                    <div class="form-email">
+                        <input id="email" class="form-email" type="email" name="email" placeholder="E-mail" required />
+                    </div>
+
+                    <!-- Campo Mensagem -->
+                    <div class="form-group">
+                        <textarea id="mensagem" class="form-control" name="mensagem" placeholder="Mensagem" required></textarea>
+                    </div>
+
+                    <!-- Botão de submissão -->
+                    <input type="submit" value="ENVIAR" class="btn btn-primary btn-block" />
+                </form>
+            </div>
+
+            <!-- imagem que vai aparecer no form-->
+            <div class="imagem-form">
+                <img class="aviao" src="/img/duvidas.png" alt="Imagem de avião" />
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <!-- Adicionando todas as bandeiras -->
+    <div class="paises-parceiros">
+        <h2>PAÍSES PARCEIROS</h2>
+        <div class="bandeiras">
+            <img src="/Paises/canada.png" alt="Canadá">
+            <img src="/Paises/franca.png" alt="França">
+            <img src="/Paises/portugal.png" alt="Portugal">
+            <img src="/Paises/eua.png" alt="EUA">
+            <img src="/Paises/coreia.png" alt="Coreia do Sul">
+            <img src="/Paises/argentina.png" alt="Argentina">
+            <img src="/Paises/italia.png" alt="Italia">
+            <img src="/Paises/alemanha.png" alt="Alemanha">
+            <img src="/Paises/australia.png" alt="Australia">
+            <img src="/Paises/japao.png" alt="Japão">
+            <img src="/Paises/inglaterra.png" alt="Inglaterra">
+            <img src="/Paises/irlanda.png" alt="Irlanda">
+
+
+            <br>
+            <br>
+            <br>
+
+           </div>
+    </div>
+
+   
+
+ 
+
+
+     <br />
+     <br />
+</body>

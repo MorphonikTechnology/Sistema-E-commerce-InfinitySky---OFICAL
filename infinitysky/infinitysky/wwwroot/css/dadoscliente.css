@@ -1,0 +1,144 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.cliente-detalhes {
+    width: 4000px;
+    max-width: 1000px; /* Ampliar o espaço máximo */
+    margin: 0 auto;
+    padding: 30px; /* Aumentar o espaçamento interno */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Aumentar o espaçamento entre os elementos */
+    margin-bottom: 30px; /* Espaçamento maior abaixo do cabeçalho */
+    text-align: center;
+}
+
+    .header h1 {
+        color: #002f5e;
+        font-size: 3em; /* Aumentar o tamanho do título */
+        margin: 0;
+        font-family: 'Gilroy-Bold';
+    }
+
+    .header p {
+        color: #002f5e;
+        font-size: 1.6em; /* Ampliar o tamanho do slogan */
+        margin: 0;
+        font-family: 'Gilroy-Medium';
+    }
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Ampliar o espaço entre o sidebar e as informações principais */
+    box-shadow: 3px 3px 3px 3px darkgray;
+}
+
+.sidebar {
+    background-color: #ffffff;
+    padding: 15px; /* Reduzido o espaçamento interno */
+    width: 400px; /* Reduzido a largura */
+    text-align: center;
+    height:366px;
+    border-radius:0px;
+    margin-left:25px;
+    margin-top:25px;
+
+   
+}
+    .sidebar p {
+        color: #002f5e;
+        font-size: 35px; /* Ampliar o tamanho da fonte do nome */
+        font-family: 'Gilroy-SemiBold';
+        margin-bottom: 20px; /* Aumentar o espaçamento inferior */
+        white-space: nowrap;
+    }
+
+.image-user {
+    height: 210px; /* Aumentar o tamanho do ícone */
+    width: 205px; /* Certificar-se que o ícone fica proporcional */
+    margin-bottom: 20px; /* Espaçamento entre ícone e nome */
+}
+
+.btn-voltar {
+    background-color: #3A85B2;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Reduzido o tamanho do botão */
+    font-size: 1.2em; /* Reduzido o tamanho do texto */
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    margin-top: 15px;
+    width: auto; /* Ajuste para o tamanho do texto */
+    font-family: 'Gilroy-SemiBold';
+    text-transform: uppercase;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    height:50px;
+    width:150px;
+    margin-left:45px;
+    
+}
+
+    .btn-voltar:hover {
+        background-color: #4a90a4;
+        color: white; /* Garante que o texto fique branco */
+    }
+
+
+.main-info {
+    background-color: #ffffff;
+    padding: 30px; /* Aumentar o espaçamento interno */
+    border-radius: 8px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1); /* Ajustar a sombra */
+    width: 100%;
+}
+
+    .main-info p {
+        margin-bottom: 12px; /* Aumentar o espaçamento entre as linhas */
+        color: #333;
+        font-size:25px; /* Ampliar o tamanho da fonte */
+        font-family: 'Gilroy-Medium';
+        
+    }
+
+    .main-info p strong{
+        margin-bottom: 12px; /* Aumentar o espaçamento entre as linhas */
+        color: #333;
+        font-size: 28px; /* Ampliar o tamanho da fonte */
+        font-family: Gilroy-Bold;
+    }
+
+
+.btn-atualizar {
+    background-color: #3A85B2;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Botões maiores */
+    width: 350px; /* Aumentar a largura do botão */
+    font-size: 1.5em; /* Aumentar o tamanho do texto */
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin: 20px auto 0;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Ajustar o efeito de sombra */
+    font-family: 'Gilroy-SemiBold';
+    text-transform: uppercase;
+}
+
+    .btn-atualizar:hover {
+        background-color: #4a90a4;
+        color: white; /* Garante que o texto fique branco */
+    }

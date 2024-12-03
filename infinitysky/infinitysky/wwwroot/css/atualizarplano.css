@@ -1,0 +1,136 @@
+﻿@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLight';
+    src: url('Gilroy-UltraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src: url('Gilroy-Thin.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Back';
+    src: url('Gilroy-Black.ttf');
+}
+
+body {
+    background-color: #ffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #003C5C;
+    font-family: Gilroy-SemiBold;
+    font-size: 65px;
+    margin: 50px 0; 
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #ffff;
+}
+
+.alterar_f {
+    width: 100%;
+    margin: 0 auto; /* Centraliza o container */
+    padding: 20px;
+    background-color: #ffff;
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+label {
+    margin-top: 15px;
+    font-family: Gilroy-SemiBold;
+    color: #003C5C;
+    font-size: 23px;
+}
+
+input, select, textarea, button {
+    margin-top: 8px; /* Ajuste o espaçamento entre o label e o campo */
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+}
+
+textarea {
+    resize: none; /* Impede o redimensionamento do textarea */
+}
+
+.botao_a {
+    margin-top: 50px;
+    background-color: #3A85B2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 60px;
+    width: 220px;
+    font-size: 40px;
+    margin-left: -50px;
+}
+
+    .botao_a:hover {
+        background-color: #0056b3;
+    }
+
+.button-container {
+    text-align: center; /* Centraliza o botão */
+    margin-top: 20px;
+}
+
+.botao_a {
+    font-family: Gilroy-Medium;
+    font-size: 80px;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.search-icon {
+    width: 30px;
+    height: auto;
+    margin-top: 2px;
+    margin-left: 550px;
+}
+
+.cart-icon {
+    width: 50px;
+    height: auto;
+    margin-left: 55px;
+    margin-top: 0px;
+}

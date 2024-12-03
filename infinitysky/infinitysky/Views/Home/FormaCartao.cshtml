@@ -1,0 +1,146 @@
+﻿@model IEnumerable<infinitysky.Models.CarrinhoViewModel>
+
+@{
+    ViewData["Title"] = "FormaCartao";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfinitySky</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="~/css/formacartao.css" asp-append-version="true">
+
+    <script>
+        // Verifica se todos os campos estão preenchidos para habilitar o botão "FINALIZAR"
+        function validateForm() {
+            const nomeCartao = document.getElementById('nome-cartao').value;
+            const numeroCartao = document.getElementById('numero-cartao').value;
+            const mesExpiracao = document.getElementById('mes-expiracao').value;
+            const anoExpiracao = document.getElementById('ano-expiracao').value;
+            const cvv = document.getElementById('cvv').value;
+
+            const isValid = nomeCartao && numeroCartao && mesExpiracao && anoExpiracao && cvv;
+            document.getElementById('finalizar-button').disabled = !isValid;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">PAGAMENTO</h1>
+        <p class="subtitulo">Escolha sua forma de pagamento</p>
+
+        <div class="main-content">
+            <div class="formulario-pagamento">
+                <div class="payment-methods">
+                    <form asp-action="FormaCartao" method="get">
+                        <button type="submit" class="selected">
+                            <img src="~/img/cartaobranco.png" alt=""> Cartão
+                        </button>
+                    </form>
+                    <form asp-action="FormaPix" method="get">
+                        <button type="submit">
+                            <img src="~/img/Pix.png" alt=""> PIX
+                        </button>
+                    </form>
+                    <form asp-action="FormaBoleto" method="get">
+                        <button type="submit">
+                            <img src="~/img/boleto.png" alt=""> Boleto
+                        </button>
+                    </form>
+                </div>
+
+                <form oninput="validateForm()">
+                    <div class="tipo-cartao">
+                        <input type="text" id="nome-cartao" placeholder="Nome do Cartão" required>
+                    </div>
+                    <div class="tipo-cartao">
+                        <input type="number" id="numero-cartao" placeholder="Número do Cartão" maxlength="16" oninput="this.value = this.value.slice(0, 16)" required>
+                    </div>
+                    <div class="tipo-cartao expiry-date">
+                        <div>
+                            <input type="number" id="mes-expiracao" placeholder="Mês" maxlength="2" oninput="this.value = this.value.slice(0, 2)" required>
+                        </div>
+                        <div>
+                            <input type="number" id="ano-expiracao" placeholder="Ano" maxlength="4" oninput="this.value = this.value.slice(0, 4)" required>
+                        </div>
+                        <div>
+                            <input type="number" id="cvv" placeholder="CVV" maxlength="3" oninput="this.value = this.value.slice(0, 3)" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="sidebar">
+                @if (Model.Any())
+                {
+                    <!-- Renderiza os itens do carrinho -->
+                    @foreach (var item in Model)
+                    {
+                        <div class="plano-item">
+                            <div class="me-3">
+                                <figure class="media">
+                                    <div class="image-container">
+                                        @if (item.image_plano != null)
+                                        {
+                                            <img src="@item.image_plano" class="product-image" alt="Imagem do Plano" />
+                                        }
+                                        else
+                                        {
+                                            <img src="/Imagens/imagenotfound.png" class="product-image" alt="Imagem Padrão" />
+                                        }
+                                    </div>
+                                </figure>
+                            </div>
+                            <h3 class="titulo-plano">@item.Nome</h3>
+                            <p class="product-info">Hospedagem: @item.HospedagemPlano</p>
+                            <p class="product-info">Curso: @item.CursoPlano</p>
+                            <p class="product-info">Escola: @item.InstituicaoPlano</p>
+                            <p class="product-info">Período: @item.PeriodoPlano</p>
+                            <p class="product-parcela">@item.ParcelaPlano</p>
+                            <p class="product-info">R$@item.Valor</p>
+                            <hr>
+                        </div>
+                    }
+
+                    <!-- Formulário para o botão "Finalizar" -->
+                    <form asp-action="FinalizarPagamento" method="post">
+                        <input type="hidden" name="carrinhoId" value="@Model.FirstOrDefault().IdCarrinho" />
+                        <input type="hidden" name="formaPagamento" value="Cartão" />
+                        <button id="finalizar-button" type="submit" class="btn btn-success" disabled>FINALIZAR</button>
+                    </form>
+                }
+                else
+                {
+                    <p>Seu carrinho está vazio.</p>
+                }
+            </div>
+
+            <script>
+                // Habilita o botão "Finalizar" quando os campos de cartão estão preenchidos
+                function validateForm() {
+                    const nomeCartao = document.getElementById('nome-cartao').value;
+                    const numeroCartao = document.getElementById('numero-cartao').value;
+                    const mesExpiracao = document.getElementById('mes-expiracao').value;
+                    const anoExpiracao = document.getElementById('ano-expiracao').value;
+                    const cvv = document.getElementById('cvv').value;
+
+                    const isValid = nomeCartao && numeroCartao && mesExpiracao && anoExpiracao && cvv;
+                    document.getElementById('finalizar-button').disabled = !isValid;
+                }
+
+                document.addEventListener("DOMContentLoaded", () => {
+                    validateForm();
+                    const inputs = document.querySelectorAll("#nome-cartao, #numero-cartao, #mes-expiracao, #ano-expiracao, #cvv");
+                    inputs.forEach(input => input.addEventListener("input", validateForm));
+                });
+            </script>
+
+        </div>
+    </div>
+
+</body>
+</html>

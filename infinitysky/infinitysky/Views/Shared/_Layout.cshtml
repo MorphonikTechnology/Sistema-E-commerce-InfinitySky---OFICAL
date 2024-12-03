@@ -1,0 +1,193 @@
+﻿<!-- Chamando o que foi criado na pasta Filters-->
+<!-- Para poder ser "global" pois anteriormente o nome do cliente da navbar não estava indo em todos as telas -->
+@{
+    var nomeCliente = Context.Items["NomeCliente"] as string;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - InfinitySky</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!-- Programando a questão do que aparece quando o cliente está logado e quando não aparece -->
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-blue border-bottom box-shadow mb-3">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <!-- LOGO -->
+                <div class="logo">
+                    <img src="/img/logo.png" alt="Infinity Sky Logo">
+                </div>
+                <!-- BARRA DE PESQUISA -->
+                <form asp-controller="Home" asp-action="Buscar" method="get">
+                    <div class="search-bar">
+                        <input type="text" name="searchTerm" placeholder="Busca...">
+                        <button>
+                            <img src="/img/lupaimg.png" alt="lupa" class="search-icon">
+                        </button>
+                    </div>
+                    <ul id="sugestoes-lista" style="display: none; position: absolute; background-color: white; border: 1px solid #ccc;"></ul>
+                </form>
+                <!-- REDES SOCIAIS -->
+                <div class="social-icons">
+                    <a href="#">
+                        <img src="/img/Instagram.png" alt="Instagram Icon">
+                    </a>
+                    <a href="#">
+                        <img src="/img/Whatsapp.png" alt="WhatsApp Icon">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- LINHA BRANCA -->
+        <div class="custom-line"></div>
+        <!-- LINKS ABAIXO DA LINHA BRANCA -->
+        <nav class="secondary-navbar">
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Principais destinos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Plano">Planos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Sobre">Sobre Nós </a>
+                </li>
+
+                <!-- Passando o que deve aparecer (os titulos = Login e Cadastro) quando não tem um cliente logado-->
+                @if (string.IsNullOrEmpty(nomeCliente))
+                {
+                    <!-- Mostrar quando o usuário NÃO estiver logado -->
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="CadastrarCliente">Cadastre-se</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Login">Entrar</a>
+                    </li>
+                }
+                else
+                {
+                    <!-- Verifica se o nome do cliente é 'Administrador' -->
+                    @if (nomeCliente == "Administrador")
+                    {
+                        <!-- Redireciona para a área do administrador -->
+                        <li class="nav-item">
+                            <a class="nav-link custom-button" asp-area="" asp-controller="Home" asp-action="AreaAdm" role="button">
+                                <img src="~/img/user.png" alt="Ícone" />
+                                @nomeCliente
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <form asp-area="" asp-controller="Home" asp-action="Sair" method="post">
+                                <button type="submit" class="nav-link btn btn-link text-white">Sair</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <!-- Mostrar quando o usuário é um cliente comum e está logado -->
+                        <li class="nav-item">
+                            <a class="nav-link custom-button" asp-area="" asp-controller="Home" asp-action="PainelCliente" role="button">
+                                <img src="~/img/user.png" alt="Ícone" />
+                                @nomeCliente
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <form asp-area="" asp-controller="Home" asp-action="Sair" method="post">
+                                <button type="submit" class="nav-link btn btn-link text-white">Sair</button>
+                            </form>
+                        </li>
+                    }
+                }
+
+
+                    <!-- O botão sair onde vai estar o método para "Deslogar o usuário
+                    <li class="nav-item">
+                        <form asp-area="" asp-controller="Home" asp-action="Sair" method="post">
+                            <button type="submit" class="nav-link btn btn-link text-white">Sair</button>
+                        </form>
+                </li>-->
+                
+                <li class="nav-item">
+                    <a href="@(User.Identity.IsAuthenticated ? Url.Action("Carrinho", "Home") : Url.Action("Login", "Home"))">
+                        <img src="/img/carrinho.png" alt="Carrinho" class="cart-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTEÚDO DINÂMICO: VIEWS -->
+    <div class="container my-5">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+  
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h5>Saiba mais</h5>
+                <ul>
+                    <a href=" https://www.instagram.com/infin.itysky?utm_source=qr&igsh=MW15YWtxczlrbGlxeg==" target="_blank">
+                    <li>Telefone</li>
+                    </a>
+                    <a href="https://wa.me/5511969533818?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os.%20Poderiam%20me%20fornecer%20mais%20detalhes,%20por%20favor?%20Obrigado!" target="_blank">
+                    <li>WhatsApp</li>
+                    </a>
+                    <a href=" https://www.instagram.com/infin.itysky?utm_source=qr&igsh=MW15YWtxczlrbGlxeg==" target="_blank">
+                    <li>E-mail</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <a href=" https://www.instagram.com/infin.itysky?utm_source=qr&igsh=MW15YWtxczlrbGlxeg==" target="_blank">
+                    <li>Instagram</li>
+                    </a>
+                    <a href=" https://maps.app.goo.gl/JXNy5ChveNhGeTbQ7" target="_blank">
+                    <li>Localização</li>
+                    </a>
+                    <a href="@Url.Action("Plano", "Home")">
+                    <li>Mais sobre países parceiros</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <a href="@Url.Action("Sobre", "Home")">
+                    <li>Nossos serviços</li>
+                    <li>Objetivos da Infinity</li>
+                    <li>Sobre nós</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h6>Ao oferecer pacotes de intercâmbio, a InfinitySky conecta estudantes ao redor do mundo à culturas e oportunidades, proporcionando experiências únicas e oferecendo um serviço de alta qualidade.	</h6>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <h5>copyright@2024.InfinitySky - Todos os direitos reservados.</h5>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

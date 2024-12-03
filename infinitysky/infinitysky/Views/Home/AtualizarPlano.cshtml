@@ -1,0 +1,190 @@
+﻿@model IncluirPlanoViewModel
+
+
+@{
+    ViewData["Title"] = "AtualizarPlano";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfinitySky</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="~/css/atualizarplano.css" asp-append-version="true">
+
+</head>
+<body>
+    <h1>ATUALIZAR PLANO</h1>
+    <div class="container">
+        <div class="alterar_f">
+            <form asp-action="AtualizarPlano" asp-controller="Home" method="post" enctype="multipart/form-data">
+
+                <!-- Campo oculto armazenar o Id do Plano -->
+                <input type="hidden" asp-for="Planos.IdPlano" />
+
+                <!-- Resumo de validação para exibir mensagens de erro -->
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Campo Nome do Plano -->
+                <div class="form-group">
+
+                    <label asp-for="Planos.Nome" class="control-label"></label> <!-- Puxa a informação do banco, assim em todos as labels -->
+                    <input asp-for="Planos.Nome" class="form-control" />
+                    <span asp-validation-for="Planos.Nome" class="text-danger"></span>
+                </div>
+
+                <!-- Campo País, onde aparece todos e depois converte para id -->
+                <div class="form-group">
+                    <label asp-for="Planos.IdPais" class="control-label">País</label>
+                    <select asp-for="Planos.IdPais" class="form-control">
+                        <option value="">Selecione um país</option>
+                        @foreach (var pais in Model.Paises)
+                        {
+                            if (pais.IdPais == Model.Planos.IdPais)
+                            {
+                                <option value="@pais.IdPais" selected>@pais.NomePais</option>
+                            }
+                            else
+                            {
+                                <option value="@pais.IdPais">@pais.NomePais</option>
+                            }
+                        }
+                    </select>
+                    <span asp-validation-for="Planos.IdPais" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Hospedagem -->
+                <div class="form-group">
+                    <label asp-for="Planos.HospedagemPlano" class="control-label"></label>
+                    <input asp-for="Planos.HospedagemPlano" class="form-control" />
+                    <span asp-validation-for="Planos.HospedagemPlano" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Curso -->
+                <div class="form-group">
+                    <label asp-for="Planos.CursoPlano" class="control-label"></label>
+                    <input asp-for="Planos.CursoPlano" class="form-control" />
+                    <span asp-validation-for="Planos.CursoPlano" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Instituição -->
+                <div class="form-group">
+                    <label asp-for="Planos.InstituicaoPlano" class="control-label"></label>
+                    <input asp-for="Planos.InstituicaoPlano" class="form-control" />
+                    <span asp-validation-for="Planos.InstituicaoPlano" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Período -->
+                <div class="form-group">
+                    <label asp-for="Planos.PeriodoPlano" class="control-label"></label>
+                    <input asp-for="Planos.PeriodoPlano" class="form-control" />
+                    <span asp-validation-for="Planos.PeriodoPlano" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Parcelas -->
+                <div class="form-group">
+                    <label asp-for="Planos.ParcelaPlano" class="control-label"></label>
+                    <input asp-for="Planos.ParcelaPlano" class="form-control" />
+                    <span asp-validation-for="Planos.ParcelaPlano" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Valor -->
+                <div class="form-group">
+                    <label asp-for="Planos.Valor" class="control-label"></label>
+                    <input asp-for="Planos.Valor" class="form-control" type="number" step="0.01" />
+                    <span asp-validation-for="Planos.Valor" class="text-danger"></span>
+                </div>
+
+                <!-- Campo Quantidade do Plano -->
+                <div class="form-group">
+                    <label asp-for="Planos.qtd_plano" class="control-label"></label>
+                    <input asp-for="Planos.qtd_plano" class="form-control" />
+                    <span asp-validation-for="Planos.qtd_plano" class="text-danger"></span>
+                </div>
+
+                <div>
+                    <!-- Exibe a imagem atual, a que esta no banco -->
+                    <label>Imagem Atual:</label>
+                    <div>
+                        <img src="@Url.Content(Model.Planos.image_plano)" alt="Imagem do Plano" width="200" />
+                    </div>
+                </div>
+
+                <div>
+                    <!-- Permite o upload de uma nova imagem - na classe não é obrigatória, se não selecionar continua a mesma-->
+                    <label>Nova Imagem (opcional):</label>
+                    <input type="file" asp-for="Planos.ImagemFile" />
+                </div>
+
+                <!-- Campo Descrição -->
+                <div class="form-group">
+                    <label asp-for="Planos.DescricaoPlano" class="control-label"></label>
+                    <textarea asp-for="Planos.DescricaoPlano" class="form-control"></textarea>
+                    <span asp-validation-for="Planos.DescricaoPlano" class="text-danger"></span>
+                </div>
+
+                <br />
+                <!-- Botão de atualizar  -->
+                <div class="button-container">
+                    <button type="submit" class="botao_a" id="updateButton">
+                        ATUALIZAR PLANO
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('#updateButton').on('click', function (event) {
+            event.preventDefault();
+            Swal.fire({
+                title: 'Você tem certeza?',
+                text: 'Deseja atualizar este plano?',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonText: 'Sim!',
+                cancelButtonText: 'Não!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    var formData = new FormData($(this).closest('form')[0]);
+
+                    $.ajax({
+                        url: '@Url.Action("AtualizarPlano", "Home")',
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (response) {
+                            if (response.success) {
+                                Swal.fire({
+                                    title: 'Atualizado com sucesso!',
+                                    text: response.message,
+                                    icon: 'success',
+                                    timer: 5000,
+                                    timerProgressBar: true,
+                                    willClose: () => {
+                                        location.reload();
+                                    }
+                                });
+                            } else {
+                                Swal.fire('Erro', response.message, 'error');
+                            }
+                        },
+                        error: function (xhr, status, error) {
+                            Swal.fire('Erro', 'Houve um problema ao atualizar o plano. Tente novamente.', 'error');
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>

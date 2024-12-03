@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Administrador";
+}
+
+<link rel="stylesheet" href="~/css/areaAdm.css" asp-append-version="true">
+
+<h1>ADMINISTRADOR</h1>
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="profile-icon">
+                <img src="~/img/engrenagem.png" alt="Usuário">
+            </div>
+        <button class="botao botao-admin">
+            <a>ADMINISTRADOR</a>
+        </button>
+
+        </div>
+
+        <div class="options-container">
+            <a href="@Url.Action("IncluirPlano", "Home")" class="option-button">
+                <img src="~/Icones/incluir_icon.png" alt="Carrinho" class="iconcarrinho">
+                <span class="carrinho">INCLUIR</span>
+            </a>
+
+            <a href="@Url.Action("DesativarPlano", "Home")" class="option-button">
+                <img src="~/img/excluir.png" alt="Compras" class="iconcompras">
+                <span class="compras">DESATIVAR</span>
+            </a>
+
+            <a href="@Url.Action("ListaAtualizar", "Home")" class="option-button">
+                <img src="~/img/alterar.png" alt="Favoritos" class="iconfavoritos">
+                <span class="favoritos">ALTERAR</span>
+            </a>
+
+            <form asp-area="" asp-controller="Home" asp-action="Sair" method="post">
+                <button type="submit" class="option-button">
+                    <img src="~/img/sair.png" alt="Sair" class="iconsair">
+                    <span class="sair">SAIR</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "PainelCliente";
+}
+
+<link rel="stylesheet" href="~/css/painelcliente.css" asp-append-version="true">
+
+<div class="dashboard-container">
+    <div class="header-container">
+        <h1>Olá, @ViewData["NomeCliente"]!</h1>
+        <p>Seu intercâmbio, do Céu ao Infinito.</p>
+    </div>
+
+    <div class="profile-container">
+        <div class="profile-card">
+            <div class="profile-icon">
+                <img src="~/img/usuarioazul.png" alt="Usuário">
+            </div>
+            <p>@ViewData["NomeCliente"]</p>
+            <button class="profile-button" onclick="window.location.href='@Url.Action("DadosCliente", "Home")'">
+                DADOS
+            </button>
+
+        </div>
+
+        <div class="options-container">
+            <a href="@Url.Action("Carrinho", "Home")" class="option-button">
+                <img src="~/img/carrinho.png" alt="Carrinho" class="iconcarrinho">
+                <span class="carrinho">CARRINHO</span>
+            </a>
+
+            <a href="@Url.Action("Compras", "Home")" class="option-button">
+                <img src="~/Icones/compras.png" alt="Compras" class="iconcompras">
+                <span class="compras">COMPRAS</span>
+            </a>
+
+            <a href="@Url.Action("Favoritos", "Home")" class="option-button">
+                <img src="~/Icones/favoritosbr.png" alt="Favoritos" class="iconfavoritos">
+                <span class="favoritos">FAVORITOS</span>
+            </a>
+
+            <form asp-area="" asp-controller="Home" asp-action="Sair" method="post">
+                <button type="submit" class="option-button">
+                    <img src="~/img/sair.png" alt="Sair" class="iconsair">
+                    <span class="sair">SAIR</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>

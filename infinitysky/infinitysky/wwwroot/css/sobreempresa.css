@@ -1,0 +1,470 @@
+﻿
+/*Fontes para adicionar no layout*/
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLight';
+    src: url('Gilroy-UltraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src: url('Gilroy-Thin.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Back';
+    src: url('Gilroy-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Estilos para a foto de fundo*/
+.fundo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.fundo-img {
+    width: 1700px;
+    height: 550px;
+    opacity: 8.0;
+    margin-left: -18%;
+    margin-top: -47px;
+}
+
+.fundo h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*Posicionando*/
+    color: #fff;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 62px;
+}
+
+
+.fundo h2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Gilroy-Medium';
+    color: #fff;
+    font-size: 39px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+
+/* Estilos para a seção de motivos */
+.motivos {
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+    width: 1537px;
+    height: 500px;
+    margin-left: -6%; /*com porcentagem vai*/
+}
+
+    .motivos h2 {
+        font-size: 51px;
+        margin-bottom: 20px;
+        color: #004080;
+        margin-left: -800px;
+        line-height: 1.5; /* Espaçamento entre linhas */
+        font-family: 'Gilroy-Bold';
+        margin-top: 70px;
+    }
+
+    .motivos ul {
+        list-style: none;
+        padding: 0;
+        font-size: 32px;
+        font-family: 'Gilroy-SemiBold';
+        margin-left: 885px;
+        line-height: 1.8; /* Espaçamento entre linhas */
+        margin-top: -300px;
+        text-align: justify; /*deixa tudo alinhado */
+    }
+
+    .motivos li {
+        margin: 10px 0;
+    }
+
+
+
+.program1 {
+    width: 1537px;
+    height: 550px;
+    margin-left: -10%; /*com porcentagem vai*/
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens no início */
+    align-items: center; /* Alinha verticalmente no centro */
+    box-sizing: border-box; /* Inclui padding dentro da largura */
+    margin-top: -8%;
+}
+
+
+.programas {
+    font-size: 28px; /* Tamanho da fonte da primeira linha */
+    color: #ffffff; /* Cor do texto */
+    margin-top: -55px;
+    font-family: 'Gilroy-SemiBold';
+    margin-left: 190px;
+}
+
+.para-estudar {
+    font-size: 67px; /* Tamanho da fonte da segunda linha */
+    font-weight: bold; /* Negrito */
+    color: #ffffff; /* Cor do texto */
+    margin-top: 80px; /* Espaço entre as linhas */
+    margin-left: -430px;
+    font-family: Gilroy-SemiBold;
+}
+
+.program1 p {
+    font-size: 29px;
+    line-height: 1.8; /* Altura da linha para melhorar a legibilidade */
+    max-width: 650px; /* Limita a largura do texto */
+    margin-left: 130px;
+    text-align: justify;
+    font-family: Gilroy-Medium;
+    color: #fff;
+}
+
+
+/*segunda parte de programas*/
+
+.program2 {
+    width: 1537px;
+    height: 550px;
+    margin-left: -10%; /*com porcentagem vai*/
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens no início */
+    align-items: center; /* Alinha verticalmente no centro */
+    box-sizing: border-box; /* Inclui padding dentro da largura */
+    margin-top: -8%;
+}
+
+
+.programas2 {
+    font-size: 28px; /* Tamanho da fonte da primeira linha */
+    Color: #004080;
+    margin-top: 70px;
+    font-family: 'Gilroy-SemiBold';
+    margin-left: 930px;
+}
+
+.para-estudar2 {
+    font-size: 67px; /* Tamanho da fonte da segunda linha */
+    font-weight: bold; /* Negrito */
+    color: #ffffff; /* Cor do texto */
+    margin-top: 210px; /* Espaço entre as linhas */
+    margin-left: -470px;
+    font-family: Gilroy-SemiBold;
+    color: #004080;
+}
+
+.program2 p {
+    font-size: 29px;
+    line-height: 1.8; /* Altura da linha para melhorar a legibilidade */
+    max-width: 650px; /* Limita a largura do texto */
+    margin-left: 130px;
+    text-align: justify;
+    font-family: Gilroy-Medium;
+    color: #004080;
+    margin-left: -1300px;
+    margin-top: 190px;
+}
+
+
+/*Serviços */
+.servicos {
+    padding: 40px;
+    background-color: #002a5c;
+    color: #fff;
+    text-align: center;
+    margin-left: -10%; /*com porcentagem vai*/
+    margin-top: 100px;
+    width: 1537px;
+    height: 450px;
+}
+
+    .servicos h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        line-height: 1.5; /* Espaçamento entre linhas */
+        font-family: Gilroy-Bold;
+        color: white;
+    }
+
+.servico-items {
+    display: flex;
+    justify-content: space-around;
+    color: #f0f0f0;
+    margin-top: -55px;
+}
+
+.servico-item {
+    width: 30%;
+    font-size: 30px;
+}
+
+
+
+    /* Estilos para os links */
+    .servico-item a {
+        text-decoration: none; /* Remove o sublinhado */
+        color: #ffffff; /* Cor branca */
+        transition: color 0.3s ease; /* Transição suave para o hover */
+        font-family: Gilroy-SemiBold;
+    }
+
+        /* Mudança de cor ao passar o mouse */
+        .servico-item a:hover {
+            color: #6bcff3; /* Pode ser uma cor mais clara ou diferente, como preferir */
+        }
+
+
+/*'Quem Somos?' */
+.Quem_somos {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+    margin-left: -10%; /*com porcentagem vai*/
+    margin-top: -15px;
+    width: 1537px;
+    height: 500px;
+}
+
+    .Quem_somos h2 {
+        font-size: 51px;
+        margin-bottom: 20px;
+        color: #004080;
+        margin-left: 600px;
+        margin-top: -400px;
+        font-family: Gilroy-Bold;
+    }
+
+    .Quem_somos p {
+        font-size: 25px;
+        line-height: 1.8; /* Altura da linha para melhorar a legibilidade */
+        max-width: 700px; /* Limita a largura do texto */
+        margin-left: 700px;
+        text-align: justify;
+        font-family: Gilroy-Medium;
+        margin-top: 40px;
+    }
+
+.loginho {
+    width: 470px;
+    height: 320px;
+    margin-left: -800px;
+    margin-top: 80px;
+}
+
+/*---------------------------------*/
+/* Centraliza o contêiner principal na página e aumenta o tamanho */
+/* Estilo para o contêiner principal com tamanho maior */
+.form-container {
+    display: flex;
+    /* max-width: 1800px; /* Aumenta a largura máxima */
+    background-color: #fff;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: auto;
+    box-shadow: 5px 5px 5px 5px darkgray;
+}
+
+.form {
+    margin-left: 200px;
+  
+}
+
+/* Estilo da coluna do formulário */
+.form-content {
+    padding: 40px;
+    width: 65%; /* Aumenta a largura da área do formulário */
+
+}
+
+/* Estilo para o título Cadastrar */
+
+
+/* Estilo dos campos de input */
+.form-inline {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-left: 65px;
+    border-radius:0px;
+}
+
+input.form-control {
+    width: 250px; /* Ajusta a largura dos inputs */
+    padding: 15px; /* Aumenta o padding */
+    border-radius: 0px;
+    font-size: 18px; /* Aumenta o tamanho da fonte dos inputs */
+    margin-bottom: 20px; /* Aumenta o espaçamento inferior */
+}
+
+input.form-email {
+    width: 250px; /* Ajusta a largura dos inputs */
+    padding: 15px; /* Aumenta o padding */
+    border: 1px solid #ccc;
+    font-size: 18px; /* Aumenta o tamanho da fonte dos inputs */
+    margin-bottom: 20px; /* Aumenta o espaçamento inferior */
+    width: 510px;
+    margin-top: -10px;
+    margin-left: 65px;
+}
+
+/* Estilizando os placeholders */
+input::placeholder {
+    color: #777;
+    font-size: 16px;
+    font-family: 'Gilroy-Medium'; /* Aumenta o tamanho da fonte dos placeholders */
+}
+
+/* Botão de submissão */
+input[type="submit"] {
+    background-color: #3A85B2; /*mudar a cor do botão*/
+    color: #fff; /*cor da letra*/
+    border-radius:0px;
+    padding: 13px; /* Aumenta o  do bottamanho do botão */
+    font-size: 20px; /* Aumenta o tamanho da fonte do botão */
+    cursor: pointer;
+    width: 30%;
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+/* Estilo para a imagem lateral */
+.aviao {
+    height: 563px; /*altura*/
+    width: 550px; /*largura*/
+}
+
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .form-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .form-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .form-content {
+        width: 100%;
+    }
+}
+
+/*área de mensagem*/
+textarea.form-control {
+    min-height: calc(1.5em + .75rem + 2px);
+    width: 510px;
+    margin-left: 65px;
+}
+
+/*estilo da escrita do formulárioo*/
+.h1, h1 {
+    font-size: 3rem; /* Aumenta o tamanho da fonte */
+    text-align: center;
+    color: #0F3460;
+    margin-bottom: 10px; /* Remove o espaçamento abaixo */
+    font-weight: bold;
+    font-family: 'Gilroy-SemiBold';
+}
+
+.h2, h2 {
+    text-align: center;
+    color: #000;
+    margin-bottom: 10px; /* Remove o espaçamento abaixo */
+    margin-top: 0.5px; /* Remove o espaçamento acima */
+    font-weight: bold;
+    font-family: 'Gilroy-SemiBold';
+    letter-spacing: 15px; /* Define o espaçamento de 2px entre as letras */
+}
+
+.h3, h3 {
+    font-size: 18px; /* Aumenta o tamanho da fonte do parágrafo */
+    text-align: center;
+    color: #000;
+    margin-bottom: 30px;
+    font-family: 'Gilroy-SemiBold';
+}
+
+
+/*--------------------------------*/
+
+.paises-parceiros {
+    text-align: center;
+    margin-top: 150px;
+}
+
+    .paises-parceiros h2 {
+        color: #003366;
+        margin-bottom: 30px;
+        font-family: Gilroy-SemiBold;
+        font-size: 28px;
+    }
+
+.bandeiras {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /*Espaçamento entre as bandeiras*/
+}
+
+    .bandeiras img {
+        width: 85px;
+        height: 55px;
+    }
+

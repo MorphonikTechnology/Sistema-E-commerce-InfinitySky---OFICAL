@@ -1,0 +1,138 @@
+﻿﻿@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: url('Gilroy-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-UltraLight';
+    src: url('Gilroy-UltraLight.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Thin';
+    src: url('Gilroy-Thin.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('Gilroy-Bold.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+@font-face {
+    font-family: 'Gilroy-SemiBold';
+    src: url('Gilroy-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Back';
+    src: url('Gilroy-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url('Gilroy-Medium.ttf');
+}
+
+
+body {
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    margin: 0;
+}
+
+
+.titulo {
+    color: #003C5C;
+    font-size: 55px;
+    text-align: center;
+    font-family: Gilroy-SemiBold;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    color: #003C5C;
+    padding: 10px;
+    text-align: left;
+    font-family: Gilroy-SemiBold;
+    font-size: 28px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+td {
+    padding: 10px;
+    /* border: 2px solid #dee2e6;*/
+    background-color: #ffff; /* Cor de fundo das células da tabela */
+}
+
+.imagem-plano {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.nome-plano {
+    font-size: 25px;
+    text-align: center;
+    font-family: Gilroy-SemiBold;
+    color: #003C5C;
+}
+
+.acoes {
+    text-align: center; /*Tudo no centro*/
+}
+
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    font-family: Gilroy-SemiBold;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+
+.btn-alterar {
+    font-size: 20px; /* Tamanho da fonte do botão */
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: auto;
+}

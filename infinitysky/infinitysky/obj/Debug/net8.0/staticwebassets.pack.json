@@ -1,0 +1,1065 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\infinitysky.bundle.scp.css",
+      "PackagePath": "staticwebassets\\infinitysky.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Icones\\barras.png",
+      "PackagePath": "staticwebassets\\Icones\\barras.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Icones\\compras.png",
+      "PackagePath": "staticwebassets\\Icones\\compras.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Icones\\favoritosbr.png",
+      "PackagePath": "staticwebassets\\Icones\\favoritosbr.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Icones\\incluir_icon.png",
+      "PackagePath": "staticwebassets\\Icones\\incluir_icon.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\alemanhaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\alemanhaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\alemanhacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\alemanhacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\argentinaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\argentinaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\argentinacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\argentinacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\argentinamoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\argentinamoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\australiaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\australiaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\australiacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\australiacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\australiamoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\australiamoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\canadaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\canadaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\canadacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\canadacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\canadamoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\canadamoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\coreiaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\coreiaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\coreiacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\coreiacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\coreiamoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\coreiamoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\espanhaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\espanhaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\espanhacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\espanhacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\espanhamoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\espanhamoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\euaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\euaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\euacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\euacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\euamoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\euamoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\francaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\francaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\francacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\francacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\inglaterraclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\inglaterraclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\inglaterracomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\inglaterracomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\inglaterramoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\inglaterramoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\irlandaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\irlandaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\irlandacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\irlandacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\italiaclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\italiaclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\italiacomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\italiacomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\italiamoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\italiamoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\japaoclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\japaoclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\japaocomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\japaocomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\japaomoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\japaomoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\portugalclima.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\portugalclima.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\portugalcomida.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\portugalcomida.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\ImagensInfo\\portugalmoeda.png",
+      "PackagePath": "staticwebassets\\ImagensInfo\\portugalmoeda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\0344b353-dd46-48e2-a457-8b5b606546b6_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\0344b353-dd46-48e2-a457-8b5b606546b6_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\13c09c70-460a-4c66-936c-b2c4ea3fc77b_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\13c09c70-460a-4c66-936c-b2c4ea3fc77b_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\16b846d7-6dac-4078-92fc-27e8ce5f01c8_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\16b846d7-6dac-4078-92fc-27e8ce5f01c8_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\1e3ac167-dcd1-4815-92ff-d58182a65316_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\1e3ac167-dcd1-4815-92ff-d58182a65316_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\2c5e937c-da68-4d45-86f6-f3b37b8c88f4_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\2c5e937c-da68-4d45-86f6-f3b37b8c88f4_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\387d6384-128d-4802-9d7b-48e3c27a5339_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\387d6384-128d-4802-9d7b-48e3c27a5339_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\3cef8cfa-bd73-4abc-8af6-b69c10b64ab8_toronto.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\3cef8cfa-bd73-4abc-8af6-b69c10b64ab8_toronto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\3f4530ac-950d-4f67-b5cb-a89827266895_fundologin.png",
+      "PackagePath": "staticwebassets\\Imagens\\3f4530ac-950d-4f67-b5cb-a89827266895_fundologin.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\45446e2f-e609-4efd-8ec4-79ec5ecc049f_fundologin.png",
+      "PackagePath": "staticwebassets\\Imagens\\45446e2f-e609-4efd-8ec4-79ec5ecc049f_fundologin.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\47d7f208-9739-4e04-b912-c0c43b6b2adc_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\47d7f208-9739-4e04-b912-c0c43b6b2adc_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\5cd30857-3902-4b96-a069-83c6f932f919_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\5cd30857-3902-4b96-a069-83c6f932f919_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\5e17f016-97a8-43a8-9332-2552396ad05a_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\5e17f016-97a8-43a8-9332-2552396ad05a_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\623a6744-9ea9-4f58-bac8-4ae35ae5a2a2_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\623a6744-9ea9-4f58-bac8-4ae35ae5a2a2_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\6a446707-d2b9-4509-9d9b-3d50dbe97f63_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\6a446707-d2b9-4509-9d9b-3d50dbe97f63_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\71fa3dc7-4a60-4eb7-8f2b-0c122574db13_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\71fa3dc7-4a60-4eb7-8f2b-0c122574db13_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\7f814475-9dfc-4262-a47e-30bf3e788297_australia.png",
+      "PackagePath": "staticwebassets\\Imagens\\7f814475-9dfc-4262-a47e-30bf3e788297_australia.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\80590bd0-98a0-473a-975d-be08c22fdefa_tokyo.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\80590bd0-98a0-473a-975d-be08c22fdefa_tokyo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\8ca5d773-7e9b-4206-a782-eb7170b9176c_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\8ca5d773-7e9b-4206-a782-eb7170b9176c_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\97a95073-30bc-48ce-a68c-cf9355715523_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\97a95073-30bc-48ce-a68c-cf9355715523_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\a8a8d213-1f8d-41ec-981e-68dec8967a62_losangeles.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\a8a8d213-1f8d-41ec-981e-68dec8967a62_losangeles.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\ae115489-4374-4bb3-b445-df52df88e814_tóquio.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\ae115489-4374-4bb3-b445-df52df88e814_tóquio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\b103c32b-07e1-44c6-827f-63496f167f4d_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\b103c32b-07e1-44c6-827f-63496f167f4d_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\c0c62b4e-6421-43e5-9316-b89b3b334bd0_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\c0c62b4e-6421-43e5-9316-b89b3b334bd0_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\c5470414-bcea-4406-89ac-b9a42306d79d_australia.png",
+      "PackagePath": "staticwebassets\\Imagens\\c5470414-bcea-4406-89ac-b9a42306d79d_australia.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\d563e2f9-dbc6-40e2-adfb-baf645fe6cc5_fundoregistro.png",
+      "PackagePath": "staticwebassets\\Imagens\\d563e2f9-dbc6-40e2-adfb-baf645fe6cc5_fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\face372e-0a5d-44cd-90cd-7668a57f4b63_tóquio.jpg",
+      "PackagePath": "staticwebassets\\Imagens\\face372e-0a5d-44cd-90cd-7668a57f4b63_tóquio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\favoritar.png",
+      "PackagePath": "staticwebassets\\Imagens\\favoritar.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoalemanha1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoalemanha1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoalemanha2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoalemanha2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoalemanha3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoalemanha3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoargentina1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoargentina1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoargentina2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoargentina2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoargentina3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoargentina3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoaustralia1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoaustralia1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoaustralia2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoaustralia2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoaustralia3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoaustralia3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planocanada1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planocanada1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planocanada2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planocanada2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planocanada3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planocanada3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planocoreia1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planocoreia1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planocoreia2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planocoreia2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planocoreia3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planocoreia3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoespanha1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoespanha1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoespanha2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoespanha2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoespanha3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoespanha3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoestadosunidos1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoestadosunidos1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoestadosunidos2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoestadosunidos2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoestadosunidos3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoestadosunidos3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planofranca1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planofranca1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planofranca2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planofranca2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planofranca3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planofranca3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoinglaterra1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoinglaterra1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoinglaterra2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoinglaterra2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoinglaterra3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoinglaterra3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoirlanda1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoirlanda1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoirlanda2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoirlanda2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoirlanda3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoirlanda3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoitalia1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoitalia1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoitalia2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoitalia2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoitalia3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoitalia3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planojapao1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planojapao1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planojapao2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planojapao2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planojapao3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planojapao3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoportugal1.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoportugal1.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoportugal2.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoportugal2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Imagens\\planoportugal3.png",
+      "PackagePath": "staticwebassets\\Imagens\\planoportugal3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\alemanha.png",
+      "PackagePath": "staticwebassets\\Paises\\alemanha.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\argentina.png",
+      "PackagePath": "staticwebassets\\Paises\\argentina.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\australia.png",
+      "PackagePath": "staticwebassets\\Paises\\australia.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\canada.png",
+      "PackagePath": "staticwebassets\\Paises\\canada.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\coreia.png",
+      "PackagePath": "staticwebassets\\Paises\\coreia.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\espanha.png",
+      "PackagePath": "staticwebassets\\Paises\\espanha.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\eua.png",
+      "PackagePath": "staticwebassets\\Paises\\eua.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\franca.png",
+      "PackagePath": "staticwebassets\\Paises\\franca.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\inglaterra.png",
+      "PackagePath": "staticwebassets\\Paises\\inglaterra.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\irlanda.png",
+      "PackagePath": "staticwebassets\\Paises\\irlanda.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\italia.png",
+      "PackagePath": "staticwebassets\\Paises\\italia.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\japao.png",
+      "PackagePath": "staticwebassets\\Paises\\japao.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\Paises\\portugal.png",
+      "PackagePath": "staticwebassets\\Paises\\portugal.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-Black.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-Black.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-BlackItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-Bold.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-BoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-ExtraBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-Heavy.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-Heavy.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-HeavyItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-HeavyItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-Light.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-Light.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-LightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-Medium.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-Medium.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-MediumItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-Regular.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-Regular.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-RegularItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-RegularItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-SemiBold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-Thin.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-Thin.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-ThinItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-UltraLight.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-UltraLight.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\Gilroy-UltraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\css\\Gilroy-UltraLightItalic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\areaAdm.css",
+      "PackagePath": "staticwebassets\\css\\areaAdm.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\atualizardadoscliente.css",
+      "PackagePath": "staticwebassets\\css\\atualizardadoscliente.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\atualizarplano.css",
+      "PackagePath": "staticwebassets\\css\\atualizarplano.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\cadastro.css",
+      "PackagePath": "staticwebassets\\css\\cadastro.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\carinho.css",
+      "PackagePath": "staticwebassets\\css\\carinho.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\compras.css",
+      "PackagePath": "staticwebassets\\css\\compras.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\dadoscliente.css",
+      "PackagePath": "staticwebassets\\css\\dadoscliente.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\detalhes.css",
+      "PackagePath": "staticwebassets\\css\\detalhes.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\excluirplano.css",
+      "PackagePath": "staticwebassets\\css\\excluirplano.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\favoritos.css",
+      "PackagePath": "staticwebassets\\css\\favoritos.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\formaboleto.css",
+      "PackagePath": "staticwebassets\\css\\formaboleto.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\formacartao.css",
+      "PackagePath": "staticwebassets\\css\\formacartao.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\formapix.css",
+      "PackagePath": "staticwebassets\\css\\formapix.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\homepage.css",
+      "PackagePath": "staticwebassets\\css\\homepage.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\incluirplano.css",
+      "PackagePath": "staticwebassets\\css\\incluirplano.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\listaatualizar.css",
+      "PackagePath": "staticwebassets\\css\\listaatualizar.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\painelcliente.css",
+      "PackagePath": "staticwebassets\\css\\painelcliente.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\planos.css",
+      "PackagePath": "staticwebassets\\css\\planos.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\resultadosbusca.css",
+      "PackagePath": "staticwebassets\\css\\resultadosbusca.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\rodape.css",
+      "PackagePath": "staticwebassets\\css\\rodape.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\sobreempresa.css",
+      "PackagePath": "staticwebassets\\css\\sobreempresa.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\css\\tipopagamento.css",
+      "PackagePath": "staticwebassets\\css\\tipopagamento.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\Instagram.png",
+      "PackagePath": "staticwebassets\\img\\Instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\Pix.png",
+      "PackagePath": "staticwebassets\\img\\Pix.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\Whatsapp.png",
+      "PackagePath": "staticwebassets\\img\\Whatsapp.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\alterar.png",
+      "PackagePath": "staticwebassets\\img\\alterar.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\asa.jpg",
+      "PackagePath": "staticwebassets\\img\\asa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\aviao.jpg",
+      "PackagePath": "staticwebassets\\img\\aviao.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\boleto.png",
+      "PackagePath": "staticwebassets\\img\\boleto.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\boletobranco.png",
+      "PackagePath": "staticwebassets\\img\\boletobranco.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\carrinho.png",
+      "PackagePath": "staticwebassets\\img\\carrinho.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\carrinhovazio.png",
+      "PackagePath": "staticwebassets\\img\\carrinhovazio.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\cartaoazul.png",
+      "PackagePath": "staticwebassets\\img\\cartaoazul.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\cartaobranco.png",
+      "PackagePath": "staticwebassets\\img\\cartaobranco.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\duvidas.png",
+      "PackagePath": "staticwebassets\\img\\duvidas.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\engrenagem.png",
+      "PackagePath": "staticwebassets\\img\\engrenagem.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\excluir.png",
+      "PackagePath": "staticwebassets\\img\\excluir.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundocarrinho.png",
+      "PackagePath": "staticwebassets\\img\\fundocarrinho.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundofavoritos.png",
+      "PackagePath": "staticwebassets\\img\\fundofavoritos.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundologin.png",
+      "PackagePath": "staticwebassets\\img\\fundologin.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundopaisesdetalhados.png",
+      "PackagePath": "staticwebassets\\img\\fundopaisesdetalhados.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundoplanosepaises.png",
+      "PackagePath": "staticwebassets\\img\\fundoplanosepaises.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundoregistro.png",
+      "PackagePath": "staticwebassets\\img\\fundoregistro.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundosobre.png",
+      "PackagePath": "staticwebassets\\img\\fundosobre.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundoviagem.png",
+      "PackagePath": "staticwebassets\\img\\fundoviagem.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundoviagem2.png",
+      "PackagePath": "staticwebassets\\img\\fundoviagem2.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\fundoviagem3.png",
+      "PackagePath": "staticwebassets\\img\\fundoviagem3.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\incluir.png",
+      "PackagePath": "staticwebassets\\img\\incluir.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\lixeira.png",
+      "PackagePath": "staticwebassets\\img\\lixeira.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\logosimbolo.png",
+      "PackagePath": "staticwebassets\\img\\logosimbolo.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\lupaimg.png",
+      "PackagePath": "staticwebassets\\img\\lupaimg.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\melhorlugar.png",
+      "PackagePath": "staticwebassets\\img\\melhorlugar.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\pixbranco.png",
+      "PackagePath": "staticwebassets\\img\\pixbranco.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\qrcode.png",
+      "PackagePath": "staticwebassets\\img\\qrcode.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\removerfavoritos.png",
+      "PackagePath": "staticwebassets\\img\\removerfavoritos.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\sair.png",
+      "PackagePath": "staticwebassets\\img\\sair.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\user.png",
+      "PackagePath": "staticwebassets\\img\\user.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\img\\usuarioazul.png",
+      "PackagePath": "staticwebassets\\img\\usuarioazul.png"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Laura\\Desktop\\InfinitySky16_10 FINALIZADO\\InfinitySky16_10\\infinitysky\\infinitysky\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.infinitysky.props",
+      "PackagePath": "build\\infinitysky.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.infinitysky.props",
+      "PackagePath": "buildMultiTargeting\\infinitysky.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.infinitysky.props",
+      "PackagePath": "buildTransitive\\infinitysky.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.infinitysky.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

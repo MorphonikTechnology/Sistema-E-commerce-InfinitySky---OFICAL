@@ -1,0 +1,155 @@
+﻿@model IEnumerable<infinitysky.Models.Planos>
+
+
+@{
+    ViewData["Title"] = "DesativarPlano";
+}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfinitySky - Área Administrativa</title>
+    <link href="~/css/excluirplano.css" rel="stylesheet" />
+</head>
+<body>
+
+    <br>
+    <h2 class="titulo">LISTA DE PLANOS</h2>
+    <br>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <br>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Imagem</th>
+                <th>Nome</th>
+                <th>Desativar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var plano in Model)
+            {
+                // Verificar se o plano está desativado
+                // Variavel para armazenar a lista dos desativados
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+                <tr>
+                    <td>
+                        <img src="@plano.image_plano" alt="Imagem do Plano" class="imagem-plano" />
+                    </td>
+                    <td class="nome-plano">@plano.Nome</td>
+                    <td class="acoes">
+                        @if (isPlanDisabled) // Criando uma verificação para mudar o nome que aparece (Ativar ou Desativado)
+                                            //Muda o botão de acordo com a verificaçãao
+                        {
+                            <button type="button" class="btn btn-success" onclick="confirmAtivar(@plano.IdPlano)">ATIVAR</button>
+                        }
+                        else
+                        {
+                            <button type="button" class="btn btn-danger" onclick="confirmDesativar(@plano.IdPlano)">DESATIVAR</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--Declarar em cima "ConfirmDesativar" e o Ativar-->
+<!--Para aparecer mensagens padrões e de confirmação-->
+
+<script>
+    // desativar um plano
+    function confirmDesativar(idPlano) {
+        Swal.fire({
+            title: 'Você tem certeza?',
+            text: 'Deseja desativar este plano?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Sim!',
+            cancelButtonText: 'Não!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: '@Url.Action("DesativarPlano", "Home")',
+                    type: 'POST',
+                    data: { idPlano: idPlano },
+                    success: function (response) {
+                        if (response.success) {
+                            Swal.fire({
+                                title: 'Desativado com sucesso!',
+                                text: response.message,
+                                icon: 'success',
+                                timer: 5000,
+                                timerProgressBar: true,
+                                willClose: () => {
+                                    location.reload();
+                                }
+                            });
+                        } else {
+                            Swal.fire('Erro', 'Não foi possível desativar o plano. Tente novamente.', 'error');
+                        }
+                    },
+                    error: function () {
+                        Swal.fire('Erro', 'Houve um problema com a solicitação. Tente novamente.', 'error');
+                    }
+                });
+            }
+        });
+    }
+
+    //  ativar um plano
+    function confirmAtivar(idPlano) {
+        Swal.fire({
+            title: 'Você tem certeza?',
+            text: 'Deseja ativar este plano?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Sim!',
+            cancelButtonText: 'Não!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: '@Url.Action("AtivarPlano", "Home")',
+                    type: 'POST',
+                    data: { idPlano: idPlano },
+                    success: function (response) {
+                        if (response.success) {
+                            Swal.fire({
+                                title: 'Ativado com sucesso!',
+                                text: response.message,
+                                icon: 'success',
+                                timer: 5000,
+                                timerProgressBar: true,
+                                willClose: () => {
+                                    location.reload();
+                                }
+                            });
+                        } else {
+                            Swal.fire('Erro', 'Não foi possível ativar o plano. Tente novamente.', 'error');
+                        }
+                    },
+                    error: function () {
+                        Swal.fire('Erro', 'Houve um problema com a solicitação. Tente novamente.', 'error');
+                    }
+                });
+            }
+        });
+    }
+</script>

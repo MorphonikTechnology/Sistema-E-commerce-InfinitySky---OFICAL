@@ -1,0 +1,1395 @@
+﻿@model PlanosPorPaisViewModel
+
+@{
+    ViewData["Title"] = "Planos";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos</title>
+    <link rel="stylesheet" href="~/css./Planos.css" asp-append-version="true">
+
+</head>
+
+
+<body>
+
+
+    <section class="banner">
+
+        <img class="banner-image" src="/img/fundoplanosepaises.png" alt="banner-image" />
+    </section>
+
+    <!-- Descrição que aparece -->
+    <section class="descricao">
+        <p>Escolher o melhor país para fazer um intercâmbio é como selecionar a estrela mais brilhante em um vasto céu de oportunidades.</p>
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <!-- Sessão do Canadá -->
+    <div class="country-section1">
+        <div class="country-header">
+            <div class="col-md-3 text-center">
+                <a href="@Url.Action("Detalhes", "Home", new { id = 1 })">
+                    <img src="/Paises/canada.png" alt="Bandeira do Canadá" class="country-flag">
+                </a>
+            </div>
+            <h3>Planos Canadá</h3>
+        </div>
+        <div class="plans-container">
+            @foreach (var plano in Model.PlanosCanadá)
+            {
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Sessão de Portugal -->
+    <div class="country-section2">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 2 })">
+                <img src="/Paises/portugal.png" alt="Bandeira de Portugal" class="country-flag">
+            </a>
+            <h3>Planos Portugal</h3>
+        </div>
+        <div class="plans-container">
+            @foreach (var plano in Model.PlanosPortugal)
+            {
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Sessão dos Estados Unidos -->
+    <div class="country-section3">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 3 })">
+                <img src="/Paises/eua.png" alt="Bandeira dos Estados Unidos" class="country-flag">
+            </a>
+            <h3>Planos Estados Unidos </h3>
+        </div>
+        <div class="plans-container">
+            @foreach (var plano in Model.PlanosEstadosUnidos)
+            {
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+
+
+                                <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+
+
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Sessão da Argentina -->
+    <div class="country-section4">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 4 })">
+                <img src="/Paises/argentina.png" alt="Bandeira da Argentina" class="country-flag">
+            </a>
+            <h3>Planos Argentina</h3>
+        </div>
+        <div class="plans-container">
+            @foreach (var plano in Model.PlanosArgentina)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <!-- Sessão para Itália-->
+    <div class="country-section5">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 5 })">
+                <img src="/Paises/italia.png" alt="Bandeira da Itália" class="country-flag">
+            </a>
+            <h3>Planos Itália </h3>
+        </div>
+        <div class="plans-container">
+            @foreach (var plano in Model.PlanosItalia)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Sessão da Espanha -->
+    <div class="country-section6">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 6 })">
+                <img src="/Paises/espanha.png" alt="Bandeira da Espanha" class="country-flag">
+            </a>
+            <h3>Planos Espanha</h3>
+        </div>
+        <div class="plans-container">
+            @foreach (var plano in Model.PlanosEspanha)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Sessão para Alemanha-->
+    <div class="country-section7">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 7 })">
+                <img src="/Paises/alemanha.png" alt="Bandeira da Alemanha" class="country-flag">
+            </a>
+            <h3>Planos Alemanha</h3>
+        </div>
+        <div class="plans-container">
+            @foreach (var plano in Model.PlanosAlemanha)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Sessão da Austrália-->
+    <div class="country-section8">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 8 })">
+                <img src="/Paises/australia.png" alt="Bandeira da Austrália" class="country-flag">
+            </a>
+            <h3>Planos Austrália</h3>
+        </div>
+        <div class="plans-container">
+
+            @foreach (var plano in Model.PlanosAustrália)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Sessão da Inglaterra  -->
+    <div class="country-section9">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 9 })">
+                <img src="/Paises/inglaterra.png" alt="Bandeira da Inglaterra" class="country-flag">
+            </a>
+            <h3>Planos Inglaterra</h3>
+        </div>
+        <div class="plans-container">
+
+            @foreach (var plano in Model.PlanosInglaterra)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Sessão da França  -->
+    <div class="country-section10">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 10 })">
+                <img src="/Paises/franca.png" alt="Bandeira da França" class="country-flag">
+            </a>
+            <h3>Planos França</h3>
+        </div>
+        <div class="plans-container">
+
+            @foreach (var plano in Model.PlanosFrança)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Sessão da Irlanda  -->
+    <div class="country-section11">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 11 })">
+                <img src="/Paises/irlanda.png" alt="Bandeira da Irlanda" class="country-flag">
+            </a>
+            <h3>Planos Irlanda</h3>
+        </div>
+        <div class="plans-container">
+
+            @foreach (var plano in Model.PlanosIrlanda)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Sessão do Japão -->
+    <div class="country-section12">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 12 })">
+                <img src="/Paises/japao.png" alt="Bandeira do Japão" class="country-flag">
+            </a>
+            <h3>Planos Japão</h3>
+        </div>
+        <div class="plans-container">
+
+            @foreach (var plano in Model.PlanosJapão)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Sessão da Coreia do Sul  -->
+    <div class="country-section13">
+        <div class="country-header">
+            <a href="@Url.Action("Detalhes", "Home", new { id = 13 })">
+                <img src="/Paises/coreia.png" alt="Bandeira Coreia do Sul" class="country-flag">
+            </a>
+            <h3>Planos Coreia do Sul</h3>
+        </div>
+        <div class="plans-container">
+
+            @foreach (var plano in Model.PlanosCoreiadoSul)
+            {
+
+                bool isPlanDisabled = ((List<long>)ViewBag.PlanosDesativados).Contains(plano.IdPlano);
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                    <div class="card product-card shadow-0 border rounded-3">
+                        <div class="card-body">
+                            <div class="hover-zoom">
+                                @if (plano.image_plano != null)
+                                {
+                                    <img src="@plano.image_plano" class="product-image img-fluid rounded-4" alt="Imagem do Plano" />
+                                }
+                                else
+                                {
+                                    <img src="/Imagens/imagenotfound.png" class="product-image img-fluid rounded-4" alt="Imagem Padrão" />
+                                }
+                            </div>
+                            <div class="pt-3">
+                                <h5 class="product-name">@plano.Nome</h5>
+                                <p class="product-info">Hospedagem: @plano.HospedagemPlano</p>
+                                <p class="product-info">Curso: @plano.CursoPlano</p>
+                                <p class="product-info">Escola: @plano.InstituicaoPlano</p>
+                                <br />
+                                <p class="product-description small text-muted">@plano.DescricaoPlano</p>
+                                <p class="product-period">Período: @plano.PeriodoPlano</p>
+                                <p class="product-parcel">@plano.ParcelaPlano</p>
+                                <p class="product-price">R$@plano.Valor</p>
+
+                                <!-- Ícone de Favoritar com bloqueio se plano desativado -->
+                                @if (!isPlanDisabled)
+                                {
+                                    @using (Html.BeginForm("AdicionarFavorito", "Home", FormMethod.Post))
+                                    {
+                                        <input type="hidden" name="id" value="@plano.IdPlano" />
+                                        <img src="/Imagens/favoritar.png" class="product-favoritar" onclick="adicionarFavorito(@plano.IdPlano)">
+                                    }
+                                }
+
+                                else
+                                {
+                                    <img src="/Imagens/favoritar.png" class="product-favoritar" style="cursor: not-allowed;" onclick="mostrarPlanoDesativado()">
+                                }
+
+
+                                <hr />
+                                <div class="d-flex align-items-center justify-content-between pb-2 mb-1">
+                                    <!-- Adicionar ao Carrinho com bloqueio se plano desativado -->
+                                    @if (!isPlanDisabled)
+                                    {
+                                        @using (Html.BeginForm("AdicionarItem", "Home", FormMethod.Post))
+                                        {
+                                            <input type="hidden" name="id" value="@plano.IdPlano" />
+                                            <input type="hidden" name="quantidade" value="1" />
+                                            <button type="button" class="button" onclick="adicionarAoCarrinho(@plano.IdPlano)">
+                                                <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                                <div class="button__icon">
+                                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7 4H22L20.395 12.93C20.282 13.545 19.751 14 19.126 14H8.745L7.878 9H19V7H7L5.302 15H18V17H4.573L4.095 14.856L3 9.944V4H7ZM6 18C7.104 18 8 18.896 8 20C8 21.104 7.104 22 6 22C4.896 22 4 21.104 4 20C4 18.896 4.896 18 6 18ZM18 18C19.104 18 20 18.896 20 20C20 21.104 19.104 22 18 22C16.896 22 16 21.104 16 20C16 18.896 16.896 18 18 18Z" fill="currentColor" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <button type="button" class="button" style="background-color: gray; cursor: not-allowed;" title="Plano desativado">
+                                            <span class="button__text">ADICIONAR AO CARRINHO</span>
+                                        </button>
+                                    }
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- Em vez de ir pra tela carrinho vai aparecer uma mensagem de sucesso e permanecer na pag
+json está na Home Controller, para funcionar precisa chamar no HTML
+-->
+
+
+<script>
+    // Função para exibir alerta quando o plano estiver desativado
+    function mostrarPlanoDesativado() {
+        Swal.fire({
+            icon: 'error',
+            title: 'Plano Indisponível!',
+            text: 'Esse plano está indisponível, não será possível favoritar',
+            confirmButtonText: 'OK'
+        });
+    }
+
+</script>
+
+
+<script>
+    function adicionarAoCarrinho(idPlano) {
+        $.ajax({
+            url: '@Url.Action("AdicionarItem", "Home")',
+            type: 'POST',
+            data: { Id: idPlano },
+            success: function (response) {
+                if (response.success) {
+                    Swal.fire({
+                        title: 'Adicionado com sucesso!',
+                        text: response.message,
+                        icon: 'success',
+                        timer: 2500,
+                        showConfirmButton: false
+                    });
+                } else if (response.redirectToLogin) {
+                    // Redireciona automaticamente para a página de login
+                    window.location.href = response.redirectUrl;
+                } else {
+                    Swal.fire('Erro', response.message || 'Não foi possível adicionar o item. Tente novamente.', 'error');
+                }
+            },
+            error: function () {
+                Swal.fire('Erro', 'Ocorreu um erro na requisição. Tente novamente.', 'error');
+            }
+        });
+    }
+
+
+
+    // Mensagem de sucesso do favoritos, semelhante do carrinho
+    function adicionarFavorito(idPlano) {
+        $.ajax({
+            url: '@Url.Action("AdicionarFavorito", "Home")',
+            type: 'POST',
+            data: { Id: idPlano },
+            success: function (response) {
+                if (response.success) {
+                    Swal.fire({
+                        title: 'Adicionado com sucesso!',
+                        text: response.message,
+                        icon: 'success',
+                        timer: 2500,
+                        showConfirmButton: false
+                    });
+                } else if (response.redirectToLogin) {
+                    // Redireciona automaticamente para a página de login
+                    window.location.href = response.redirectUrl;
+                } else {
+                    Swal.fire('Erro', response.message || 'Não foi possível adicionar o item. Tente novamente.', 'error');
+                }
+            },
+            error: function () {
+                Swal.fire('Erro', 'Ocorreu um erro na requisição. Tente novamente.', 'error');
+            }
+        });
+    }
+
+</script>
+
+
+
