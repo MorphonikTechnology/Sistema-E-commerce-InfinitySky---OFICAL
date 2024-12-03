@@ -4,5 +4,21 @@ As ilustrações oferecem uma visão abrangente, clara e intuitiva sobre a naveg
 O sistema foi desenvolvido no programa Visual Studio, utilizando a linguagem C# e seguindo o protótipo criado no aplicativo Figma. Todo o desenvolvimento segue os princípios de orientação a objetos, garantindo a eficiência do sistema e a integração com o banco de dados para o armazenamento das informações. A interface é totalmente personalizada e estilizada com HTML e CSS, contando ainda com funcionalidades implementadas em JavaScript.
 </p>
 
+## Membros da equipe: 
+– Eloá Vasconcelos de Macedo
+<br>
+– José Vinicius Valmoleda Laranjeira de Araújo
+<br>
+– Laura Cristine Silva
+<br>
+– Livia Rodrigues Cremonez
+<br>
+– Marina Oliveira da Silva
+<br>
+– Paulo Ricardo Matiasso Cruz
+<br>
+<br>
+**3° M-TEC PI DS (GRUPO 6)**
+
 # Funcionamento do sistema e-commerce:
 LINK DO VÍDEO: https://drive.google.com/file/d/1H7vOlh2w3rvsrdwdxM4OVL3HNhzsMD0w/view
